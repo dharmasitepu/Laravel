@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Halaman utama
-Route::get('/', function () {
+Route::get('/beranda', function () {
     return view('v_beranda');
 });
 
@@ -22,6 +22,17 @@ Route::get('/', function () {
 Route::get('/elearning', function () {
     return view('elearning.v_elearning');
 });
+
+//Menu Halaman HTML Lama
+Route::view('/', 'v_home');
+Route::view('/elearnings', 'v_elearnold');
+//Menu Halaman spesifik Utama
+Route::view('/task', 'v_task');
+Route::view('/prestasis', 'v_prestasis');
+Route::view('/vismis', 'v_vismis');
+Route::view('/profils', 'v_profils');
+Route::view('/cert', 'v_cert');
+
 
 //Menu Halaman Tentang
 Route::view('/kegiatan', 'tentang.v_kegiatan');
