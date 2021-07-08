@@ -21,7 +21,7 @@
           <a class="nav-link" href="/blog">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/elearning">E-learning</a>
+          <a class="nav-link" href="/profile">E-learning</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/kontak">Kontak</a>

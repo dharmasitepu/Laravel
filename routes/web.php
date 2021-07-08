@@ -18,10 +18,15 @@ Route::get('/', function () {
     return view('v_beranda');
 });
 
-//Halaman Admin-LTE (E-learning)
-Route::get('/elearning', function () {
-    return view('elearning.v_elearning');
-});
+// //Halaman (E-learning)
+// Route::get('/elearning', function () {
+//     return view('elearning.v_elearning');
+// });
+
+//Halaman (E-learning)
+Route::view('/elearning', 'elearning.v_profile');
+Route::view('/profile', 'elearning.v_profile');
+Route::view('/certificate', 'elearning.v_certificate');
 
 //Menu Halaman Tentang
 Route::view('/kegiatan', 'tentang.v_kegiatan');
